@@ -9,29 +9,44 @@
 <body>
     <div class="container">
         <header>
-            <div class="current-time center">
-                <h3 id="greet">Good Evening</h3>
-            </div>
-            <div class="calendar center">
-                <h3 id="date">Sep 19, 2020</h3>
-            </div>
+            <div class="greet-msg center" id="greet"></div>
+            <div class="date center" id="date"></div>
         </header>
         <main>
-            <div class="search center">
-                <input type="text" id="search" name="search" placeholder="Search city by name........">
+            <div class="search-bar center">
+                <input type="text" id="search" name="search" placeholder="Search by city name........">
             </div>
-            <div class="city center" id="city">Mumbai, IN</div>
+            <div class="city center" id="city"></div>
             <div class="weather-info center">
+                <div class="temperature center">
+                    <h3>Temeprature</h3>
+                    <h2><span id="temperature"></span>&#8451;</h2>
+                </div>
                 <div class="condition center">
                     <h3>Weather condition</h3>
-                    <h2 id="condition">Heavy Rain</h2>
+                    <h2 id="condition"></h2>
                 </div>
-                <div class="temp center">
-                    <h3>Temprature</h3>
-                    <h2 id="temperature">24 <span>&#8451;</span></h2>
-                </div>
-                <div class="other center">
-
+                <div class="factors">
+                    <div class="row">
+                        <div class="visibility center">
+                            <h5>Visibility</h5>
+                            <h4><span id="visibility"></span>mi</h4>
+                        </div>
+                        <div class="humidity center">
+                            <h5>Humdity</h5>
+                            <h4><span id="humidity"></span>%</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pressure center">
+                            <h5>Pressure</h5>
+                            <h4><span id="pressure"></span>mb</h4>
+                        </div>
+                        <div class="wind-speed center">
+                            <h5>Wind Speed</h5>
+                            <h4><span id="wind-speed"></span>mph</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

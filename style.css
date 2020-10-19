@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     height: 100%;
@@ -32,13 +32,17 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
 }
-.current-time{
+.greet-msg{
     height: 100%;
     width: 40%;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-.calendar{
+.date{
     height: 100%;
     width: 40%;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 main{
     height: 80%;
@@ -46,7 +50,7 @@ main{
     display: flex;
     flex-flow: column wrap;
 }
-.search{
+.search-bar{
     height: 20%;
     width: 100%;
 }
@@ -60,7 +64,7 @@ main{
 #search::placeholder{
     color: white;
     font-weight: lighter;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 #search:focus{
     outline: none;
@@ -86,34 +90,64 @@ main{
 }
 #condition{
     font-size: 2.8em;
-    margin: 5px;
+    margin: 10px;
 }
-.temp{
+.temperature{
     height: 70%;
     width: 20%;
     border-right: 1px solid white;
 }
 #temperature{
     font-size: 2.8em;
-    margin: 5px;
+    margin: 10px;
 }
-.other{
+.factors{
     height: 70%;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.visibility{
+    width: 40%;
+    height: 100%;
+    border-bottom: 1px solid white;
+}
+#visibility{
+    font-size: 1.6em;
+    margin: 10px 10px 10px 0px;
+}
+.humidity{
+    width: 40%;
+    height: 100%;
+    border-bottom: 1px solid white;
+}
+#humidity{
+    font-size: 1.6em;
+    margin: 10px 10px 10px 0px;
+}
+.pressure{
+    width: 40%;
+    height: 100%;
+}
+#pressure{
+    font-size: 1.6em;
+    margin: 10px 10px 10px 0px;
+}
+.wind-speed{
+    width: 40%;
+    height: 100%;
+}
+#wind-speed{
+    font-size: 1.6em;
+    margin: 10px 10px 10px 0px;
 }
 
 @media (max-width: 450px) {
-	.weather-info{
-        min-height: 60%;
-        width: 100%;
-        flex-direction: column;
-    }
-    .condition{
-        border-right: 0;
-        border-bottom: 1px solid white;
-    }
-    .temp{
-        border-right: 0;
-        border-bottom: 1px solid white;
-    }
 }
