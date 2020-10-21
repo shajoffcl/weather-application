@@ -150,4 +150,35 @@ main{
 }
 
 @media (max-width: 450px) {
+    .greet-msg{
+        height: 100%;
+        width: 50%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .date{
+        height: 100%;
+        width: 50%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .weather-info{
+        flex-direction: column;
+    }
+    .condition{
+        height: 70%;
+        width: 20%;
+        border-right: 0;
+        border-bottom: 1px solid white;
+    }
+    .temperature{
+        height: 70%;
+        width: 20%;
+        border-right: 0;
+        border-bottom: 1px solid white;
+    }
+    .factors{
+       display: none;
+    }
+   
 }

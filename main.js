@@ -6,7 +6,7 @@ const api={
     url:"https://api.openweathermap.org/data/2.5/weather"
 };
 
-// Access all ui component and stored in object
+// Access all UI component and stored in object
 
 const uiElements={
     greet:document.getElementById('greet'),
@@ -63,6 +63,7 @@ const displayData=(weather)=>{
 }
 
 //Calculate date and time
+
 const getDate=function() {
 	const date = new Date();
     currentTime = date.getHours();
